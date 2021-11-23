@@ -5,4 +5,4 @@ if ! tool_loc="$(type -p gogroup)" || [[ -z ${tool_loc} ]]; then
       go get -u -v github.com/Bubblyworld/gogroup/...
 fi
 
-gogroup -order std,other,prefix=Finndon_Auth_app --rewrite $(find . -type f -name "*.go" | grep -v /vendor/ |grep -v /.git/)
+gogroup -order std,other,prefix=HighloadSoftwareArchitecture --rewrite $(find . -type f -name "*.go" | grep -v /vendor/ |grep -v /.git/)
