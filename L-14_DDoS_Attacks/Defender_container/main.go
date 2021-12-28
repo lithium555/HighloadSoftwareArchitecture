@@ -10,7 +10,7 @@ import (
 
 func main() {
 	router := mux.NewRouter()
-	router.HandleFunc("/api/", DoHealthCheck).Methods("GET")
+	router.HandleFunc("/api/", DoHealthCheck).Methods(http.MethodGet)
 	log.Fatal(http.ListenAndServe(":8080", router))
 }
 func DoHealthCheck(w http.ResponseWriter, r *http.Request) {

@@ -4,7 +4,8 @@ Link on presentation:
 https://docs.google.com/presentation/d/1a72WF58mx01l08EjeNyG0PnXkY1IRa0PEJQ-HN2Ec44/edit#slide=id.gcb9a0b074_1_0
 
 Setup two docker containers:
-1. attacker container - there you need to write scripts that will implement 6 attacks (UDP Flood, ICMP flood, HTTP flood, Slowloris, SYN flood,  Ping of Death)
+1. attacker container - there you need to write scripts that will implement 6 attacks (UDP Flood, ICMP flood,
+HTTP flood, Slowloris, SYN flood,  Ping of Death)
 2. Defender container - ubuntu & nginx with simple website
 3. Try to implement protection on Defender container
 4. Launch attacker scripts and examine you protection
