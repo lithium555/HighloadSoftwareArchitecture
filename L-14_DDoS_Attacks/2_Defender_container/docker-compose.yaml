@@ -1,12 +1,16 @@
-version: "3.6"
+version: "3.8"
 
 services:
   goservice:
+    container_name: goservice
     build: "."
     ports:
-    - "8081:8080"
+    - "8080:8080"
   nginx:
-    build: "./nginx"
+    container_name: nginx
+    image: nginx:latest
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
     ports:
       - "8084:80"
     depends_on:

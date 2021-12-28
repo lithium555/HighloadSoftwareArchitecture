@@ -25,3 +25,5 @@ How to protect NGINX ?
 5. Use Cache to Smooth Traffic Spikes (размазываем трафик с помощью кэша. Не пускаем его в систему и с помощью кэша создаем определенный параметр)
 6. Block Suspicious Requests (блочим именно подозрительные запросы)
    Ссылка на официальном сайте: https://www.nginx.com/blog/mitigating-ddos-attacks-with-nginx-and-nginx-plus/
+
+docker-compose down && docker-compose build && docker-compose up -d
