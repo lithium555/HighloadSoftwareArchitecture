@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"example.com/m/v2/L8/app"
+	"example.com/m/v2/L-8/app"
 )
 
 func main() {
